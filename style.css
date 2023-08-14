@@ -15,3 +15,124 @@ section {
 #gallery .row>* {
     padding: 0;
 }
+
+
+
+
+/* my idols section  */
+.idol-box {
+    position: relative;
+    background-color: #AF3D3B;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.idol-box::before {
+    content: "My";
+    position: absolute;
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.9s;
+
+}
+
+.idol-box:hover::before {
+
+    opacity: 0.5;
+}
+
+.idol-box::after {
+    content: "Idol";
+    position: absolute;
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0;
+    top: 280px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    transition: 0.9s;
+
+}
+
+.idol-box:hover:after {
+
+    opacity: 0.5;
+}
+
+.idol-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate3d(0, 0, 50px);
+}
+
+.idol-box:hover .idol-name {
+    top: 20px;
+    opacity: 1;
+}
+
+.idol-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.idol-box:hover .idol-detail-button {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.idol-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 80px);
+    transition: 0.5s;
+    width: 300px;
+
+}
+
+
+.idol-box:hover .idol-img {
+    transform: translate3d(-50%, -50%, 100px) rotate(10deg) scale(1.2);
+}
+
+
+.idol-box .rossi-img {
+    top: 210px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rossi {
+    background-color: #ade20d;
+}
+
+.ali {
+    background-color: #4D2633;
+}
+
+.idol-box .ali-img {
+    top: 240px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
